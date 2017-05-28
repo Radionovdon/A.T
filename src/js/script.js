@@ -2,7 +2,7 @@
 
 $(function(){
 
-	let menuOffset = $('.header-menu').offset();
+	let menuOffset = $('main').offset();
 
 	$(document).on('scroll', function(){
 
@@ -13,7 +13,6 @@ $(function(){
 		} else {
 			$('.header-menu').removeClass('fixed');
 		}
-
 	});
 
 	let section1OffsetTop = $('.home').offset().top;
@@ -44,7 +43,13 @@ $(function(){
 
 	});
 
-	$(".header-menu").on("click","a", function (e) {
+	$('.header-menu').on('click','a', function (e) {
+		e.preventDefault();
+		let id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+	$('.footer-menu').on('click','a', function (e) {
 		e.preventDefault();
 		let id  = $(this).attr('href'),
 		top = $(id).offset().top;

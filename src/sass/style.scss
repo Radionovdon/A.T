@@ -5,26 +5,39 @@
 	}
 	header {
 		width: 100%;
-		height: 90px;
-		margin: 0 auto;
-		background-color: yellow;
-		background-size: cover;
 		.header-menu {
-			padding-top: 30px;
+			width: 100%;
 			.header-menu-list {
-				
+				display: flex;
+				justify-content: center;
+				padding: 0;
 				.header-menu-element {
-					display: inline-block;
-					padding: 10px 5px;
+					padding: 10px;
 					a {
 						text-decoration: none;
+						font-size: 18px;
+						color: black;
 					}
 					a:hover {
 						color: red;
 					}
 				}
-				.header-menu-element:hover {
-					background-color: pink;
+				.header-menu-element:nth-child(1),
+				.header-menu-element:nth-child(2),
+				.header-menu-element:nth-child(3),
+				.header-menu-element:nth-child(4),
+				.header-menu-element:nth-child(5),
+				.header-menu-element:nth-child(6) {
+					margin-top: 4px;
+				}
+				.header-menu-element:nth-child(2) {
+					margin-left: 50px;
+				}
+				.header-menu-element:nth-child(6) {
+					margin-right: 50px;
+				}
+				.header-menu-element:nth-child(12) > span {
+					display: none;
 				}
 				.header-menu-element.active > a {
 					color: red;
@@ -34,32 +47,62 @@
 		.header-menu.fixed {
 			position: fixed;
 			top: 0;
-			left: center;
+			left: 0;
+			background-color: grey;
 		}
 	}
 	main {
 		width: 100%;
-		height: 500px;
+		height: 800px;
+		background-color: #ffa;
 	}
 	section.solutions {
 		width: 100%;
-		height: 500px;
-		background-color: green;
+		height: 700px;
+		background-color: #ff9999;
+		h6 {
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			color: orange;
+			padding: 120px 0;
+		}
 	}
 	section.clients {
 		width: 100%;
 		height: 500px;
-		background-color: orange;
+		background-color: #ff99ff;
+		h6 {
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			color: orange;
+			padding: 120px 0;
+		}
 	}
 	section.team {
 		width: 100%;
 		height: 500px;
-		background-color: grey;
+		background-color: #ff9999;
+		h6 {
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			color: orange;
+			padding: 120px 0;
+		}
 	}
 	section.contacts {
 		width: 100%;
 		height: 800px;
-		background-color: tomato;
+		background-color: #ff9999;
+		h6 {
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			color: orange;
+			padding: 120px 0;
+		}
 	}
 	footer {
 		height: 170px;
