@@ -72,18 +72,88 @@
 		width: 100%;
 		height: 500px;
 		background-color: #ff99ff;
-		h6 {
-			width: 100%;
-			text-align: center;
-			font-size: 30px;
-			color: orange;
-			padding: 120px 0;
+		.conteiner {
+			h6 {
+				width: 100%;
+				text-align: center;
+				font-size: 30px;
+				color: orange;
+				padding: 120px 0;
+			}
+			.data-clients {
+				.list-clients {
+					position: relative;
+					overflow: hidden;
+					display: flex;
+					.element-clients {
+						padding-right: 45px;
+						a.mgid {
+							display: block;
+							margin-top: 17px;
+							width: 152px;
+							height: 86px;
+							transition: 0.2s all;
+							background: url(../img/sprites/mgid_sprite.png) 0 0 no-repeat;
+						}
+						a.mgid:hover {
+							background-position: 0 -92.1px;
+						}
+						a.dari {
+							display: block;
+							margin-top: 17px;
+							width: 39px;
+							height: 79px;
+							transition: 0.2s all;
+							background: url(../img/sprites/dari-kz_sprite.png) 0 0 no-repeat;
+						}
+						a.dari:hover {
+							background-position: -41px 0;
+						}
+						a.diagnostica {
+							display: block;
+							width: 163px;
+							height: 120px;
+							transition: 0.2s all;
+							background: url(../img/sprites/diagnostica_sprite.png) 0 0 no-repeat;
+						}
+						a.diagnostica:hover {
+							background-position: -169px 0;
+						}
+						a.atameken {
+							display: block;
+							margin-top: 17px;
+							width: 154px;
+							height: 80px;
+							transition: 0.2s all;
+							background: url(../img/sprites/atameken_sprite.png) 0 0 no-repeat;
+						}
+						a.atameken:hover {
+							background-position: 0 -83px;
+						}
+						a.engler {
+							display: block;
+							margin-top: 25px;
+							width: 214px;
+							height: 66px;
+							transition: 0.2s all;
+							background: url(../img/sprites/engler_sprite.png) 0 0 no-repeat;
+						}
+						a.engler:hover {
+							background-position: 0 -68px;
+						}
+					}
+					.element-clients:nth-child(1) {
+						padding-left: 15px;
+					}
+				}
+			}
 		}
 	}
 	section.team {
 		width: 100%;
 		height: 500px;
 		background-color: #ff9999;
+		clear: both;
 		h6 {
 			width: 100%;
 			text-align: center;
