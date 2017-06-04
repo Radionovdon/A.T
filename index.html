@@ -6,11 +6,13 @@
 	<title>allatrack</title>
 	<link rel="stylesheet" href="build/css/main.css">
 	<script src="src/js/jquery-3.2.1.min.js"></script>
-	<script src="src/js/script.js"></script>
+	<script src="src/js/nav-menu.js"></script>
+	<script src="src/js/slider.js"></script>
+	<script src="src/js/submit.js"></script>
 </head>
 <body>
 	<header>
-		<div id="home" class="home">
+		<div id="home" name="home" class="home">
 			<nav class="header-menu">
 				<ul class="header-menu-list">
 					<li class="header-menu-element"><a href="#home">ALLATRACK</a></li>
@@ -30,17 +32,126 @@
 		</div>
 	</header>
 	<main>
-		
-
-		
+		<div class="slider-conteiner-main">
+			<ul class="slider-main">
+				<li class="slider-element-main active fade ">
+					<img src="src/img/slider_main/sistemy_kompyuternogo_zreniya.jpg" alt="">
+					<div class="slider-element-text-main"><p>Компьютерное Зрение</p></div>
+				</li>
+				<li class="slider-element-main fade">
+					<img src="src/img/slider_main/data-science.jpg" alt="">
+					<div class="slider-element-text-main"><p>Анализ Данных</p></div>
+				</li>
+				<li class="slider-element-main fade">
+					<img src="src/img/slider_main/hq5a1-kt_-_01.jpg" alt="">
+					<div class="slider-element-text-main"><p>Работа с Оборудованием</p></div>
+				</li>
+				<li class="slider-element-main fade">
+					<img src="src/img/slider_main/background.jpg" alt="">
+					<div class="slider-element-text-main"><p>Веб Разработка</p></div>
+				</li>
+			</ul>
+			<div class="slider-prev-main">&#10094</div>
+			<div class="slider-next-main">&#10095</div>
+			<br>
+			<div class="slider-buttons-main">
+				<span class="dot-main active" ></span>
+				<span class="dot-main" ></span>
+				<span class="dot-main" ></span>
+				<span class="dot-main" ></span>
+			</div>
+		</div>
 	</main>
-	<section id="solutions" class="solutions">
+	<section id="solutions" name="solutions" class="solutions">
 		<div class="conteiner">
 			<h6>Решения</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempore cupiditate provident ea suscipit earum facere in nihil quisquam, officiis aspernatur sequi numquam ut. Dolor tenetur sunt sequi, sint dolores.</p>
+			<ul class="solutions-list-row">
+				<li class="solutions-element-col1">
+					<figure>
+						<div class="solutions-element1">
+							<div class="solutions-cover">
+								<h2 class="solutions-cover-title">
+									Системы Компьютерного Зрения
+								</h2>
+								<ul class="solutions-cover-list">
+									<li class="solutions-cover-text">Потоковые системы распознования</li>
+									<li class="solutions-cover-text">Видеоаналитика</li>
+									<li class="solutions-cover-text">Цветовое зрение и анализ мультиспектральных изображений</li>
+									<li class="solutions-cover-text">Методы формирования рентгеновских и УЗИ изображений</li>
+									<li class="solutions-cover-text">Использование свойств зрения в человеко-машинных интерфейсах</li>
+								</ul>
+							</div>
+						</div>
+						<figcaption>
+							<a href="#">Hi-End системы технического зрения. Потоковые системы распознавания и видеоаналитика</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="solutions-element-col2">
+					<figure>
+						<div class="solutions-element2">
+							<div class="solutions-cover">
+								<h2 class="solutions-cover-title">
+									Технологии Машинного Обучения
+								</h2>
+								<ul class="solutions-cover-list">
+									<li class="solutions-cover-text">Статистический анализ</li>
+									<li class="solutions-cover-text">Анализ неструктурированных данных</li>
+									<li class="solutions-cover-text">Прогнозирование на основании неполных данных</li>
+									<li class="solutions-cover-text">Лингвистический анализ</li>
+									<li class="solutions-cover-text">Системы распознования изображения</li>
+									<li class="solutions-cover-text">Глубинное обучение</li>
+								</ul>
+							</div>
+						</div>
+						<figcaption>
+							<a href="#">Наши консалтинговые и обучающие решения сочетают инновации и опыт, для использования преимуществ машинного обучения в бизнесе</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="solutions-element-col3">
+					<figure>
+						<div class="solutions-element3">
+							<div class="solutions-cover">
+								<h2 class="solutions-cover-title">
+									Работа с Оборудованием
+								</h2>
+								<ul class="solutions-cover-list">
+									<li class="solutions-cover-text">Интеграция с медицинскими системами</li>
+									<li class="solutions-cover-text">Анализ медицинских данных</li>
+									<li class="solutions-cover-text">Системы автопилота для дронов</li>
+									<li class="solutions-cover-text">Системы воздушного мониторинга</li>
+								</ul>
+							</div>
+						</div>
+						<figcaption>
+							<a href="#">Работаем с медицинским оборудованием. Автоматизируем и интегрируем ваше оборудование в удобную ИT систему</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="solutions-element-col4">
+					<figure>
+						<div class="solutions-element4">
+							<div class="solutions-cover">
+								<h2 class="solutions-cover-title">
+									Мобильная и Веб Разработка
+								</h2>
+								<ul class="solutions-cover-list">
+									<li class="solutions-cover-text">Разработка кроссплатформенных приложений</li>
+									<li class="solutions-cover-text">Приложения для smart Watch</li>
+									<li class="solutions-cover-text">Корпоративные системы любой сложности</li>
+								</ul>
+							</div>
+						</div>
+						<figcaption>
+							<a href="#">Разрабатываем Веб и Мобильные системы любой сложности</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
 		</div>
 	</section>
-	<section id="clients" class="clients">
+	<section id="clients" name="clients" class="clients">
 		<div class="conteiner">
 			<h6>Наши клиенты</h6>
 			<div class="data-clients">
@@ -54,14 +165,72 @@
 			</div>
 		</div>
 	</section>
-	<section id="team" class="team">
+	<section id="team" name="team" class="team">
 		<div class="conteiner">
 			<h6>Команда</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi iusto, maiores nesciunt esse quaerat in animi ducimus similique. Provident magni animi nam dolores ad accusamus sint illo esse veritatis sapiente.</p>
+			<ul class="team-list-row">
+				<li class="team-element-col1">
+					<figure>
+						<a href="https://uk-ua.facebook.com/public/%D0%98%D0%B2%D0%B0%D0%BD-%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2" target="_blank"><div class="team-photo"></div></a>
+						<figcaption>
+							<a href="https://uk-ua.facebook.com/public/%D0%98%D0%B2%D0%B0%D0%BD-%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2" target="_blank">Иван Иванов</a><p>Директор</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="team-element-col2">
+					<figure>
+						<a href="https://www.facebook.com/public/%D0%9F%D0%B5%D1%82%D1%8F-%D0%9F%D0%95%D1%82%D1%80%D0%BE%D0%B2" target="_blank"><div class="team-photo"></div></a>
+						<figcaption>
+							<a href="https://www.facebook.com/public/%D0%9F%D0%B5%D1%82%D1%8F-%D0%9F%D0%95%D1%82%D1%80%D0%BE%D0%B2" target="_blank">Петя Петров</a><p>Директор Продюсер</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="team-element-col3">
+					<figure>
+						<a href="https://www.instagram.com/ksidorov/" target="_blank"><div class="team-photo"></div></a>
+						<figcaption>
+							<a href="https://www.instagram.com/ksidorov/" target="_blank">Коля Сидоров</a><p>Продюсер Директор</p>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
 		</div>
 	</section>
-	<section id="contacts" class="contacts">
+	<section id="contacts" name="contacts" class="contacts">
 		<h6>Контакты</h6>
+		<div class="contacts-search">
+			<h4 class="search-title">Напишите Нам</h4>
+			<p class="search-text">Появились вопросы ? &nbsp; &nbsp; Напишите Нам</p>
+			<form action="#" method="post" id="search-form">
+				<input class="search-input-name" type="text" placeholder="Имя" required>
+				<input class="search-input-email" type="text" placeholder="Email или Телефон" required>
+				<textarea class="search-input-question" cols="36" rows="5" placeholder="Вопрос" required></textarea>
+				<input class="search-reset" type="reset" value="Очистить">
+				<input class="search-submit" type="submit" value="Отправить">
+			</form>
+			<div class="modal-overlay">
+				<div class="modal">
+					<h5 class="contacts-modal-title">Спасибо за ваш вопрос!</h5>
+					<p class="contacts-modal-text">В ближайшее время мы свяжемся с вами.</p>
+					<input class="button-close" type="button" value="CLose">
+				</div>
+			</div>
+			<div class="contacts-icon">
+				<div class="modal-overlay-partnership">
+					<div class="modal-partnership">
+						<h4 class="search-title">Напишите Нам</h4>
+						<p class="search-text">Появились вопросы ? &nbsp; &nbsp; Напишите Нам</p>
+						<form action="#" method="post" id="search-form">
+							<input class="search-input-name" type="text" placeholder="Имя" required>
+							<input class="search-input-email" type="text" placeholder="Email или Телефон" required>
+							<textarea class="search-input-question" cols="36" rows="15" placeholder="Вопрос" required></textarea>
+							<input class="search-reset" type="reset" value="Очистить">
+							<input class="search-submit-partnership" type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10164.794260516132!2d30.49628191180706!3d50.43740198377034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceef8d762715%3A0xdda16f585fa221d4!2sHaidara+St%2C+50%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1495982790952" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</section>
 	<footer>
