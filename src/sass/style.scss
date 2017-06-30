@@ -1,3 +1,17 @@
+@font-face {
+	font-family: RobotoLight;
+	src: url(../../fonts/Roboto/roboto-light-webfont.eot); /*font for IE*/
+	src: url(../../fonts/Roboto/roboto-light-webfont.eot?#iefix), 
+	url(../../fonts/Roboto/roboto-light-webfont.woff),
+	url(../../fonts/Roboto/roboto-light-webfont.woff2),
+	url(../../fonts/Roboto/Roboto-Light.ttf); /*font for other browsers*/
+}
+
+$RobotoLight: 'RobotoLight', Arial, sans-serif;
+
+
+
+
 @media screen and (max-width: 1920px) and (min-width: 980px) {
 	.conteiner {
 		width: 940px;
@@ -5,6 +19,8 @@
 	}
 	header {
 		width: 100%;
+		font-family: $RobotoLight;
+		font-weight: bold;
 		.header-menu {
 			width: 100%;
 			height: 50px;
@@ -12,7 +28,6 @@
 			position: fixed;
 			top: 0;
 			left: 0;
-			background-color: white;
 			.header-menu-list {
 				display: flex;
 				justify-content: center;
@@ -21,11 +36,12 @@
 					padding: 10px;
 					a {
 						text-decoration: none;
-						font-size: 18px;
+						font-size: 12px;
 						color: black;
+						letter-spacing: 0.05em;
 					}
 					a:hover {
-						color: red;
+						color: rgba(0,0,0,0.5);
 					}
 				}
 				.header-menu-element:nth-child(1),
@@ -46,7 +62,77 @@
 					display: none;
 				}
 				.header-menu-element.active > a {
-					color: red;
+					color: rgba(0,0,0,0.5);
+				}
+				.header-menu-element:nth-child(7) {
+					.header-menu-element-social {
+						display: block;
+						background: url(../img/sprites_social/sprite-in1.png);
+						background-size: cover;
+						overflow: hidden;
+						width: 15px;
+						height: 15px;
+						margin-top: 5px;
+					}
+					.header-menu-element-social:hover {
+						background-position: -15px 0;
+					}
+				}
+				.header-menu-element:nth-child(8) {
+					.header-menu-element-social {
+						display: block;
+						background: url(../img/sprites_social/sprite-f.png);
+						background-size: cover;
+						overflow: hidden;
+						width: 9px;
+						height: 15px;
+						margin-top: 5px;
+					}
+					.header-menu-element-social:hover {
+						background-position: -12px 0;
+					}
+				}
+				.header-menu-element:nth-child(9) {
+					.header-menu-element-social {
+						display: block;
+						background: url(../img/sprites_social/sprite-t.png);
+						background-size: cover;
+						overflow: hidden;
+						width: 18px;
+						height: 15px;
+						margin-top: 5px;
+					}
+					.header-menu-element-social:hover {
+						background-position: -23px 0;
+					}
+				}
+				.header-menu-element:nth-child(10) {
+					.header-menu-element-social {
+						display: block;
+						background: url(../img/sprites_social/sprite-e1.png);
+						background-size: cover;
+						overflow: hidden;
+						width: 21px;
+						height: 15px;
+						margin-top: 6px;
+					}
+					.header-menu-element-social:hover {
+						background-position: -24px 0;
+					}
+				}
+				.header-menu-element:nth-child(11) {
+					.header-menu-element-social {
+						display: block;
+						background: url(../img/sprites_social/sprite-c.png);
+						background-size: cover;
+						overflow: hidden;
+						width: 14px;
+						height: 15px;
+						margin-top: 6px;
+					}
+					.header-menu-element-social:hover {
+						background-position: -16px 0;
+					}
 				}
 			}
 		}
@@ -66,8 +152,7 @@
 					display: none;
 					img {
 						width: 100%;
-						height: 650px;
-						padding-top: 50px;
+						height: 700px;
 					}
 					.slider-element-text-main {
 						width: 100%;
@@ -146,11 +231,12 @@
 		border-top: 4px solid #ff4e50;
 		.conteiner {
 			h6 {
+				font-family: $RobotoLight;
 				width: 100%;
 				text-align: center;
-				font-size: 70px;
+				font-size: 40px;
 				color: black;
-				padding-top: 100px;
+				padding-top: 50px;
 			}
 			.solutions-list-row {
 				font-size: 0;
@@ -238,20 +324,31 @@
 					}
 				}
 			}
+			.slideInUp {
+				animation-name: slideInUp;
+				animation-duration: 10s;
+			}
+			@keyframes slideInUp {
+				0% { transform: translate3d(0, 100%, 0);
+					opacity: 0; }
+				100% { transform: none;
+					opacity: 1; }
+			}
 		}
 	}
 	section.clients {
 		width: 100%;
-		height: 500px;
+		height: 333px;
 		background-color: #ff99ff;
 		border-top: 4px solid #ff4e50;
 		.conteiner {
 			h6 {
+				font-family: $RobotoLight;
 				width: 100%;
 				text-align: center;
-				font-size: 70px;
+				font-size: 40px;
 				color: black;
-				padding: 100px 0 50px 0;
+				padding: 50px 0;
 			}
 			.data-clients {
 				.list-clients {
@@ -329,11 +426,12 @@
 		clear: both;
 		border-top: 4px solid #ff4e50;
 		h6 {
+			font-family: $RobotoLight;
 			width: 100%;
 			text-align: center;
-			font-size: 70px;
+			font-size: 40px;
 			color: black;
-			padding: 100px 0 50px 0;
+			padding: 50px 0;
 		}
 		.team-list-row {
 			width: 100%;
@@ -389,11 +487,12 @@
 		background-color: #ff9959;
 		border-top: 4px solid #ff4e50;
 		h6 {
+			font-family: $RobotoLight;
 			width: 100%;
 			text-align: center;
-			font-size: 70px;
+			font-size: 40px;
 			color: black;
-			padding: 100px 0 30px 0;
+			padding: 50px 0 30px 0;
 		}
 		.contacts-search {
 			text-align: center;

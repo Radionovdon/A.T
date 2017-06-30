@@ -16,7 +16,11 @@ $(function(){
 		} else {
 			elem.css('top', h_mrg);
 		}
-		
+
+		var a = $(".solutions-list-row").css('opacity');
+		if ( top >= 700 && a == 0) {$(".solutions-list-row").stop().animate({'opacity':'1', 'top': '200'},1500)};
+		if ( top < 700 && a == 1) {$(".solutions-list-row").stop().animate({'opacity':'0'},1500)};
+
 	});
 
 	let section1OffsetTop = $('.home').offset().top;
